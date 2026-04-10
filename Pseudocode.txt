@@ -1,0 +1,6 @@
+1. Create 16x16 divs via flex
+2. Use loop for creating 16 boxes Row and give display flex
+3. Create 16 boxes column
+  - create a loop for each row div and create 16 boxes.
+  - create a container around 16 divs Row
+  - Use flex box and turn flex-direction to column for each div
