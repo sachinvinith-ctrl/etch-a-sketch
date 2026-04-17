@@ -15,6 +15,10 @@ childDiv.style.height = "30px";
 childDiv.style.borderTop = "2px solid black";
 parentDiv.appendChild(childDiv);
 
+childDiv.addEventListener("mouseenter", () => childDiv.style.backgroundColor = "green");
+
+
+
 }
 
 }
