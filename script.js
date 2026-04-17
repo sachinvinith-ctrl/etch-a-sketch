@@ -1,28 +1,23 @@
 const container = document.querySelector("#container");
 container.style.display = "flex";
 
-
-
-
-const gridRowContainerDiv = document.createElement("div");
-container.appendChild(gridRowContainerDiv);
-gridRowContainerDiv.style.display = "flex"
-gridRowContainerDiv.style.flexDirection = "column";
-
-
-
-
-
 for(let i = 0; i < 16; i++) {
 
+const div = document.createElement("div");
+div.textContent = "div1";
+div.style.border = "3px solid black";
+container.appendChild(div);
 
-const gridRowDiv = document.createElement("div");
-gridRowDiv.textContent = "divs";
-gridRowDiv.style.border = "5px solid black";
-gridRowContainerDiv.appendChild(gridRowDiv);
+for(let i = 0; i < 15; i++) {
 
-
-
+const div1 = document.createElement("div");
+div1.textContent = "div2";
+div1.style.border = "1px solid black";
+div.appendChild(div1);
 
 }
+
+}
+
+
 
