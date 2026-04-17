@@ -3,21 +3,23 @@ container.style.display = "flex";
 
 for(let i = 0; i < 16; i++) {
 
-const div = document.createElement("div");
-div.textContent = "div1";
-div.style.border = "3px solid black";
-container.appendChild(div);
+const parentDiv = document.createElement("div");
+parentDiv.style.border = "2px solid black";
+container.appendChild(parentDiv);
 
 for(let i = 0; i < 15; i++) {
 
-const div1 = document.createElement("div");
-div1.textContent = "div2";
-div1.style.border = "1px solid black";
-div.appendChild(div1);
+const childDiv = document.createElement("div");
+childDiv.style.width = "30px";
+childDiv.style.height = "30px";
+childDiv.style.borderTop = "2px solid black";
+parentDiv.appendChild(childDiv);
 
 }
 
 }
+
+
 
 
 
