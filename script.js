@@ -32,6 +32,7 @@ button.addEventListener ("click", () => { answer =
 
 prompt("Please enter number for which you want to add grids") 
 
+if (answer < 100) {
 
 const container = document.querySelector("#container");
 container.replaceChildren();
@@ -56,6 +57,13 @@ parentDiv.appendChild(childDiv);
 childDiv.addEventListener("mouseenter", () => childDiv.style.backgroundColor = "green");
 
 }
+
+}
+
+} else {
+
+alert("Please enter a value less than 100!")
+
 
 }
 
