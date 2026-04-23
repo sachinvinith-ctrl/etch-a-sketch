@@ -7,3 +7,8 @@
   - use flex to turn the row div to column div
 
 4. Add 16 row divs 
+5. Set the width of the sketchpad for the default one to a fixed width.
+6. By default, insert the sketchpad that is on screen.
+7. If the user clicks on change grid button the default is cleared and new one is created.
+8. The new one created must be based on the user input
+6. The reset button must ask the user for a prompt

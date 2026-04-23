@@ -1,26 +1,31 @@
+
 let answer;
+
+
 
 const button = document.querySelector("button");
 button.addEventListener ("click", () => { answer = 
 
-prompt("Please enter number for which you want to add grids") } )
+prompt("Please enter number for which you want to add grids") 
+
 
 const container = document.querySelector("#container");
 container.style.display = "flex";
 
 
-for(let i = 0; i < 16; i++) {
+for(let i = 0; i < answer; i++) {
 
 const parentDiv = document.createElement("div");
 parentDiv.style.border = "2px solid black";
 container.appendChild(parentDiv);
 
-for(let i = 0; i < 16; i++) {
+
+for(let i = 0; i < answer; i++) {
 
 const childDiv = document.createElement("div");
-childDiv.style.width = "20px";
-childDiv.style.height = "20px";
 childDiv.style.borderTop = "2px solid black";
+childDiv.style.minWidth = "30px";
+childDiv.style.minHeight = "30px";
 parentDiv.appendChild(childDiv);
 
 childDiv.addEventListener("mouseenter", () => childDiv.style.backgroundColor = "green");
@@ -28,5 +33,12 @@ childDiv.addEventListener("mouseenter", () => childDiv.style.backgroundColor = "
 }
 
 }
+
+
+} 
+
+)
+
+
 
 
