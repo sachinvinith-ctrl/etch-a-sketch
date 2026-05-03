@@ -25,6 +25,12 @@ const button = document.querySelector("button");
 button.addEventListener("click", function() { userInput = prompt("Please enter a new div size")
 container.replaceChildren();
 
+if (userInput > 100) {
+
+alert("Please enter a value lower than hundred");
+
+} else {
+
 for(let i = 0; i < userInput * userInput; i++) {
 
 const childDiv = document.createElement("div");
@@ -33,8 +39,9 @@ childDiv.style.flex = "1";
 childDiv.style.flexBasis = (100 / userInput) + "%";
 container.appendChild(childDiv);
 
+childDiv.addEventListener("mouseenter", () => childDiv.style.backgroundColor = "green");
 }
 
-});
+} } );
 
 
